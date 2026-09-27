@@ -2,10 +2,13 @@ import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
 const LINKS = [
-  { href: '#about', label: 'About' },
-  { href: '#values', label: 'Values' },
+  { href: '#home', label: 'Home' },
+  { href: '#about', label: 'About Us' },
   { href: '#programs', label: 'Programs' },
-  { href: '#impact', label: 'Impact' },
+  { href: '#impact', label: 'Our Impact' },
+  { href: '#team', label: 'Our Team' },
+  { href: '#contact', label: 'Contact' },
+
 ]
 
 export default function Header() {
