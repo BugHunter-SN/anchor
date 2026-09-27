@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Anchor, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 const LINKS = [
   { href: '#about', label: 'About' },
@@ -26,9 +26,11 @@ export default function Header() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center gap-2.5 text-paper">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gold text-forest-dark">
-            <Anchor size={18} strokeWidth={2.25} />
-          </span>
+          <img
+            src="/images/logo-small.jpg"
+            alt="ANCHOR logo"
+            className="h-9 w-9 object-contain"
+          />
           <span className="leading-none">
             <span className="block font-display text-lg font-semibold tracking-tight">ANCHOR</span>
             <span className="hidden text-[11px] font-medium text-paper/55 sm:block">
@@ -40,7 +42,7 @@ export default function Header() {
         <nav className="hidden items-center gap-8 md:flex">
           {LINKS.map((link) => (
             
-             <a key={link.href}
+            <a key={link.href}
               href={link.href}
               className="text-sm font-medium text-paper/85 transition-colors hover:text-gold-light"
             >
@@ -70,7 +72,7 @@ export default function Header() {
           <nav className="flex flex-col gap-4">
             {LINKS.map((link) => (
               
-               <a key={link.href}
+              <a key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
                 className="text-base font-medium text-paper/90"
@@ -79,7 +81,7 @@ export default function Header() {
               </a>
             ))}
             
-             <a href="#donate"
+            <a href="#donate"
               onClick={() => setOpen(false)}
               className="mt-2 rounded-full bg-gold px-5 py-2.5 text-center text-sm font-semibold text-forest-dark"
             >

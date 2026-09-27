@@ -1,4 +1,4 @@
-import { Anchor, Mail, Phone } from 'lucide-react'
+import { Mail, Phone } from 'lucide-react'
 
 const EXPLORE = [
   { label: 'About us', href: '#about' },
@@ -21,9 +21,11 @@ export default function Footer() {
       <div className="mx-auto grid max-w-6xl gap-12 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr]">
         <div>
           <a href="#" className="flex items-center gap-2.5 text-paper">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gold text-forest-dark">
-              <Anchor size={18} strokeWidth={2.25} />
-            </span>
+            <img
+              src="/images/logo-small.jpg"
+              alt="ANCHOR logo"
+              className="h-9 w-9 object-contain"
+            />
             <span className="font-display text-lg font-semibold">ANCHOR</span>
           </a>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-paper/60">
@@ -63,18 +65,18 @@ export default function Footer() {
           <ul className="mt-4 space-y-2.5 text-sm">
             <li>
               
-                <a href="mailto:hello@anchorfoundation.org"
+                <a href="mailto:info@anchorlbr.org"
                 className="flex items-center gap-2 text-paper/65 transition-colors hover:text-paper"
               >
-                <Mail size={15} /> hello@anchorfoundation.org
+                <Mail size={15} /> info@anchorlbr.org
               </a>
             </li>
             <li>
               
-                <a href="tel:+1234567890"
+                <a href="tel:+231777295719"
                 className="flex items-center gap-2 text-paper/65 transition-colors hover:text-paper"
               >
-                <Phone size={15} /> +1 (234) 567-890
+                <Phone size={15} /> +231 (0) 777 295 719
               </a>
             </li>
           </ul>
