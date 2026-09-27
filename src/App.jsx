@@ -6,6 +6,8 @@ import Programs from './components/Programs'
 import Impact from './components/Impact'
 import Donate from './components/Donate'
 import Footer from './components/Footer'
+// import Team from './components/Team'
+import Contact from './components/Contact'
 
 export default function App() {
   return (
@@ -17,6 +19,8 @@ export default function App() {
         <Values />
         <Programs />
         <Impact />
+        {/* <Team /> */}
+        <Contact />
         <Donate />
       </main>
       <Footer />

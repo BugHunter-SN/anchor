@@ -36,9 +36,9 @@ export default function Header() {
           />
           <span className="leading-none">
             <span className="block font-display text-lg font-semibold tracking-tight">ANCHOR</span>
-            <span className="hidden text-[11px] font-medium text-paper/55 sm:block">
+            {/* <span className="hidden text-[11px] font-medium text-paper/55 sm:block">
               Advancing Nurturing Communities for Health Outcomes &amp; Resilience
-            </span>
+            </span> */}
           </span>
         </a>
 

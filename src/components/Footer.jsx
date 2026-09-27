@@ -1,11 +1,10 @@
 import { Mail, Phone } from 'lucide-react'
 
 const EXPLORE = [
-  { label: 'About us', href: '#about' },
-  { label: 'Values', href: '#values' },
+  { label: 'About Us', href: '#about' },
   { label: 'Programs', href: '#programs' },
-  { label: 'Impact', href: '#impact' },
-  { label: 'Donate', href: '#donate' },
+  { label: 'Our Impact', href: '#impact' },
+  { label: 'Our Team', href: '#team' },
 ]
 
 const INVOLVED = [
@@ -20,7 +19,7 @@ export default function Footer() {
     <footer className="bg-forest-dark px-6 pb-8 pt-16 text-paper/80">
       <div className="mx-auto grid max-w-6xl gap-12 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr]">
         <div>
-          <a href="#" className="flex items-center gap-2.5 text-paper">
+          <a href="#home" className="flex items-center gap-2.5 text-paper">
             <img
               src="/images/logo-small.jpg"
               alt="ANCHOR logo"
@@ -65,7 +64,7 @@ export default function Footer() {
           <ul className="mt-4 space-y-2.5 text-sm">
             <li>
               
-                <a href="mailto:info@anchorlbr.org"
+              <a href="mailto:info@anchorlbr.org"
                 className="flex items-center gap-2 text-paper/65 transition-colors hover:text-paper"
               >
                 <Mail size={15} /> info@anchorlbr.org
@@ -73,7 +72,7 @@ export default function Footer() {
             </li>
             <li>
               
-                <a href="tel:+231777295719"
+              <a href="tel:+231777295719"
                 className="flex items-center gap-2 text-paper/65 transition-colors hover:text-paper"
               >
                 <Phone size={15} /> +231 (0) 777 295 719
